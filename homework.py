@@ -100,6 +100,7 @@
 # part2 = nums[:len(nums)//2]
 # result = [part1, part2]
 # print(result)
+#
 
 
 
