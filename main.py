@@ -1,135 +1,110 @@
-# print("Hello world!")
+################# 4.1
+
+# arr = [0, 1, 0, 12, 3]
+# def move_zeros_to_right(arr):
+#     count_zeros = 0
+#     for num in arr:
+#         if num == 0:
+#             count_zeros += 1
+#     result = [num for num in arr if num !=0] + [0] * count_zeros
+#     return result
+# new_arr = move_zeros_to_right(arr)
+# print(new_arr)
+#################
+
+# arr = [0]
+# def move_zeros_to_right(arr):
+#     count_zeros = 0
+#     for num in arr:
+#         if num == 0:
+#             count_zeros += 0
+#             return result
+# print(arr)
+
+#################
+
+# arr = [1, 0, 13, 0, 0, 0, 5]
+# def move_zeros_to_right(arr):
+#     count_zeros = 0
+#     for num in arr:
+#         if num == 0:
+#             count_zeros += 1
+#     result = [num for num in arr if num !=0] + [0] * count_zeros
+#     return result
+# new_arr = move_zeros_to_right(arr)
+# print(new_arr)
+
+###################
+
+# arr = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+# def move_zeros_to_right(arr):
+#     count_zeros = 0
+#     for num in arr:
+#         if num == 0:
+#             count_zeros += 1
+#     result = [num for num in arr if num !=0] + [0] * count_zeros
+#     return result
 #
-#
+# new_arr = move_zeros_to_right(arr)
+# print(new_arr)
 
+############### ###### ДЗ 4.2
 
-
-# number = 37568
-# n1 = number % 10
-# n2 = number % 100 // 10
-# n3 = number // 100 % 10
-# n4 = number // 1000 % 10
-# n5 = number // 10000
-# print(n1)
-# print(n2)
-# print(n3)
-# print(n4)
-# print(n5)
-# result = n1 + n2 + n3 + n4 + n5
-# print("Result:", result)
-
-#  ДЗ 1
-
-
-# number = 1234
-# n1 = number // 1000 % 10
-# n2 = number // 100 % 10
-# n3 = number % 100 // 10
-# n4 = number % 10
-# print(n1)
-# print(n2)
-# print(n3)
-# print(n4)
-# result = n1 + n2 + n3 + n4
-# print("Result:", result)
-
-
-
-#  ДЗ 2
-
-
-# n1 = int(input())
-#
-# n2 = 0
-#
-# while n1 > 0:
-#     digit = n1 % 10
-#     n1 = n1 // 10
-#
-#     n2 = n2 * 10 + digit
-#
-# print(n2)
-
-# number = int(input('Enter a number:'))
-# n1 = 1
-# n2 = 2
-# n3 = 3
-# n4 = 4
-# n5 = 5
-# result = n5 * 10000 + n4 * 1000 + n3 * 100 + n2 * 10 + n1
-# print(result)
-
-
-# number = int(input('Enter a number:'))
-# n1 = 3
-# n2 = 7
-# n3 = 5
-# n4 = 6
-# n5 = 8
-# result = n5 * 10000 + n4 * 1000 + n3 * 100 + n2 * 10 + n1
-# print(result)
-
-# n1, n2 = 10, 20
-# print(n1 > n2)
-# print(n1 >= n2)
-# print(n1 < n2)
-# print(n1 <= n2)
-# print(n1 == n2)
-# print(n1 != n2)
-# result = n1 == n2
-
-# print(1 == 1 and 3 == 3)
-# print(1 == 1 or 2 == 3)
-# is_valid = False
-# print(not is_valid)
-# print("Hello" in "Hello world")
-#
-# hours = int(input("Enter hours:"))
-# if hours >= 12:
-#     print("PN")
+# numbers = [1, 3, 5]
+# if len(numbers) != 0:
+#     summa = 0
+#     for i in range(len(numbers)):
+#         if i % 2 == 0:
+#             summa += numbers[i]
+#     result = summa * numbers[-1]
 # else:
-#     print("AM")
-
-
-
-# number1 = int(input("Enter first number:"))
-# number2 = int(input("Enter first number:"))
-# number3 = int(input("Enter first number:"))
-# if number1 <= number2 <= number3:
-#     print(number1)
-# elif number2 <= number1 <= number3:
-#     print(number2)
-# elif number3 <= number2 <= number1:
-#     print(number3)
-
-
-# number1 = int(input("Enter first number:"))
-# number2 = int(input("Enter first number:"))
-# number3 = int(input("Enter first number:"))
+#     result = 0
+# print(f"Result: {result}")
 #
-# if number1 == number2 == number3:
-#     print(3)
-# elif number1 == number2 or number1 == number3 or number2 == number1:
-#     print()
+
+
+# numbers = [6]
+# if len(numbers) != 0:
+#     summa = 0
+#     for i in range(len(numbers)):
+#         if i % 2 == 0:
+#             summa += numbers[i]
+#     result = summa * numbers[-1]
+# else:
+#     result = 0
+# print(f"Result: {result}")
 
 
 
-# user_select = int(input("1. Start\n2. Settings\n3. Saved games\n4. Exit\nSelect"))
+# numbers = []
+# if len(numbers) != 0:
+#     summa = 0
+#     for i in range(len(numbers)):
+#         if i % 2 == 0:
+#             summa += numbers[i]
+#     result = summa * numbers[-1]
+# else:
+#     result = 0
+# print(f"Result: {result}")
 
 
-# match user_select:
-#     case 1:
-#         print("Starting game...")
-#     case 2:
-#         print("Settings")
-#     case 3:
-#         print("Saved games")
-#     case 3:
-#         print("Exit")
-#     case _:
-#         print("Invalid input please try again")
 
-# калькулятор
-# while True: print(eval(input(">>>")))
+################## ДЗ 4.3
+
+
+
+# import random
+# numbers = []
+# for i in range(random.randint(3, 10)):
+#     numbers.append(random.randint(3, 10))
+# print("random numbers")
+# print(numbers)
+# print("Числа по індексу (0, 2, -2)")
+# numbers = [numbers[0], numbers[2], numbers[-2]]
+# print(numbers)
+
+
+
+
 
 
