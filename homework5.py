@@ -1,34 +1,37 @@
 ######## 5.1
 
-# import string
-# import keyword
-#
-# test_data = ['_', '__', '___', 'x', 'get_value', 'get value', 'get!value', 'some_super_puper_value', 'Get_value',
-#              'get_Value', '3m', 'm3', 'assert', 'assert_exception']
-#
-# for test_variable in test_data:
-#     if len(test_variable) > 0:
-#         if test_variable in keyword.kwlist:
-#             print(f"False!  {test_variable} !")
-#         elif not test_variable[0].isnumeric() and test_variable.islower() and test_variable.count(" ") == 0:
-#             is_correct = True
-#             for symbol in string.punctuation.replace("_", ""):
-#                 if symbol in test_variable:
-#                     is_correct = False
-#                     print(f"False! {symbol} !")
-#                     break
-#
-#             first_underscore_index = test_variable.find("_")
-#             if first_underscore_index != -1:
-#                 second_underscore_index = test_variable.find("_", first_underscore_index + 1)
-#                 if second_underscore_index != -1 and second_underscore_index - first_underscore_index == 1:
-#                     is_correct = False
-#                     print(f"False! Found more '__' {test_variable} !")
-#
-#             if is_correct:
-#                 print(f"True {test_variable} !")
-#         else:
-#             print(f"False! {test_variable} !")
+import string
+import keyword
+
+test_data = ['_', '__', '___', 'x', 'get_value', 'get value', 'get!value', 'some_super_puper_value', 'Get_value',
+             'get_Value', '3m', 'm3', 'assert', 'assert_exception']
+
+for test_variable in test_data:
+    if len(test_variable) > 0:
+        if test_variable in keyword.kwlist:
+            print(f"{test_variable} = False!")
+        elif not test_variable[0].isnumeric() and test_variable.islower() and test_variable.count(" ") == 0:
+            is_correct = True
+            for symbol in string.punctuation.replace("_", " "):
+                if symbol in test_variable:
+                    is_correct = False
+                    print(f"{test_variable} = False!")
+                    break
+
+            first_underscore_index = test_variable.find("_")
+            if first_underscore_index >= 1:
+                second_underscore_index = test_variable.find("_", first_underscore_index + 1)
+                if second_underscore_index >= 1 and second_underscore_index + first_underscore_index == 2:
+                    is_correct = False
+                    print(f"{first_underscore_index} False! Found more 2 '_' !")
+
+            if is_correct:
+                        print(f"{test_variable} = True!")
+        else:
+              print(f"{test_variable} = False!")
+
+
+
 
 
 
