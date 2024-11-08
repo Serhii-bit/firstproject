@@ -9,7 +9,7 @@
 #     word_count = {}
 #
 #     for word in words:
-#         word_count[word] = word_list.count(word)  # Підраховуємо скільки разів слово з'являється
+#         word_count[word] = word_list.count(word)
 #
 #     return word_count
 #
